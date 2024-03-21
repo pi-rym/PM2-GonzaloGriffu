@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/front/styles/reset.css" />
+    <link rel="stylesheet" href="/front/styles/movies.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <title>Proyecto M2</title>
+  </head>
+  <header>
+    <div class="banner">
+      <h1 class="elh1">Crear Pelicula</h1>
+    </div>
+    <nav class="nav">
+      <a class="elboton" href="./index.html"> INICIO</a>
+      <a class="elboton" href="./history.html"> HISTORIA DEL CINE</a>
+      <a class="elboton" href="./aboutMe.html"> ACERCA DE MI</a>
+    </nav>
+  </header>
+
+  <body>
+    <div class="formMovies">
+      <form id="movieForm">
+        <input
+          class="input"
+          type="text"
+          id="title"
+          name="title"
+          placeholder="Título de la Pelicula ej: Guardianes de la Galaxia"
+          autocomplete="off"
+        />
+
+        <input
+          class="input"
+          type="number"
+          id="year"
+          name="year"
+          placeholder="Año de estreno ej: 2014"
+          autocomplete="off"
+        />
+        <input
+          class="input"
+          type="text"
+          id="director"
+          name="director"
+          placeholder="Nombre del Director ej: James Gunn"
+          autocomplete="off"
+        />
+
+        <input
+          class="input"
+          id="duration"
+          type="text"
+          name="duration"
+          placeholder="Duracion de la Pelicula ej: 2 hs"
+          autocomplete="off"
+        />
+
+        <input
+          class="input"
+          id="genre"
+          type="text"
+          name="genre"
+          placeholder="Género de la Pelicula ej: Ciencia ficción"
+          autocomplete="off"
+        />
+        <input
+          class="input"
+          type="text"
+          step="any"
+          id="rate"
+          name="rate"
+          placeholder="Rating de la Pelicula ej: 7.7"
+          autocomplete="off"
+        />
+
+        <input
+          class="input"
+          type="text"
+          step="any"
+          id="poster"
+          name="rate"
+          placeholder="Poster de la Pelicula ej: https://posterGOTG1.jpg"
+          autocomplete="off"
+        />
+
+        <input
+          id="sendButton"
+          class="boton-imagen"
+          type="submit"
+          value="Enviar"
+        />
+
+        <label for="clearButton"><p>Borrar todos los campos:</p> </label>
+        <input
+          id="clearButton"
+          class="boton-imagen"
+          type="button"
+          placeholder="borrar campos"
+          style="
+            width: 20px;
+            height: 20px;
+            border-radius: 2em;
+            background-color: red;
+          "
+        />
+      </form>
+    </div>
+
+    <script src="./public/createMovie.bundle.js"></script>
+  </body>
+</html>

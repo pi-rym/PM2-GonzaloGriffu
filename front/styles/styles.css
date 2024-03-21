@@ -1,50 +1,94 @@
-/* Estilos generales */
+
+/* Reset de estilos y estilos generales */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-  }
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  main {
-    padding: 20px;
-  }
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  /* Estilos específicos para las tarjetas de películas */
-  .card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-  .card img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
+  background-image: url(/front/styles/img/3540149.jpg);
+  background-position: center;
+  justify-content: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: #343a40;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner {
+  font-size: 1.5rem;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.elboton {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #6c757d;
+}
+
+.elboton:hover {
+  background-color: #5a6268;
+}
+
+/* Estilos para el carrusel */
+#carouselExampleInterval {
+  margin-top: 20px;
+}
+
+.carousel-item img {
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon:before,
+.carousel-control-next-icon:before {
+  color: white;
+}
+
+.carousel-control-prev {
+  left: -2%;
+}
+
+.carousel-control-next {
+  right: -2%;
+}
+
+#clearButton {
+  color: white;
+}
+
+
+/* Estilos para el contenedor final */
+.miContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.233);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
